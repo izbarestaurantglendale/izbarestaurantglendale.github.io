@@ -413,6 +413,40 @@ document.addEventListener("DOMContentLoaded", function() {
 		</div>
 					</div>
 		</section>
+				<!-- Live Jazz / July 3rd promo: fixed bottom-left on desktop, in-flow after the banner on tablet/mobile -->
+				<style>
+					.izba-jazz-float{position:fixed;left:40px;bottom:40px;z-index:2147483647;width:clamp(220px,24vw,310px);border-radius:10px;overflow:hidden;box-shadow:0 14px 44px rgba(0,0,0,.6);line-height:0;transition:transform .25s ease,box-shadow .25s ease;}
+					.izba-jazz-float:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 20px 54px rgba(0,0,0,.7);}
+					.izba-jazz-float img{display:block;width:100%;height:auto;}
+					@media (max-width:1024px){.izba-jazz-float{position:static;display:block;left:auto;bottom:auto;width:min(86%,440px);margin:28px auto;box-shadow:0 10px 30px rgba(0,0,0,.35);}.izba-jazz-float:hover{transform:none;}}
+					@media (min-width:1025px){.izba-jazz-float{cursor:zoom-in;}}
+					.izba-jazz-modal{position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.85);padding:4vh 4vw;cursor:zoom-out;visibility:hidden;opacity:0;transition:opacity .25s ease,visibility .25s ease;}
+					.izba-jazz-modal.is-open{visibility:visible;opacity:1;}
+					.izba-jazz-modal img{max-width:min(92vw,760px);max-height:92vh;width:auto;height:auto;border-radius:12px;box-shadow:0 24px 80px rgba(0,0,0,.65);cursor:default;}
+					.izba-jazz-modal-close{position:absolute;top:20px;right:30px;background:none;border:0;color:#fff;font-size:42px;line-height:1;cursor:pointer;opacity:.85;transition:opacity .2s ease;}
+					.izba-jazz-modal-close:hover{opacity:1;}
+				</style>
+				<a href="tel:+18183881728" class="izba-jazz-float" aria-label="RSVP for Live Jazz on July 3rd, call 818-388-1728">
+					<img src="uploads/2026/06/jazz.jpg" width="1080" height="1350" loading="eager" alt="Celebrate Independence Day on July 3rd with us at Izba Restaurant &amp; Bar. Live Jazz Music 7PM&#8211;10PM, 241 N Brand Blvd, Glendale, CA 91203. RSVP today: 818-388-1728." />
+				</a>
+				<div class="izba-jazz-modal" id="izbaJazzModal" role="dialog" aria-modal="true" aria-label="Live Jazz on July 3rd event flyer" aria-hidden="true">
+					<button class="izba-jazz-modal-close" type="button" aria-label="Close flyer">&times;</button>
+					<img src="uploads/2026/06/jazz.jpg" alt="Celebrate Independence Day on July 3rd with us at Izba Restaurant &amp; Bar. Live Jazz Music 7PM&#8211;10PM, 241 N Brand Blvd, Glendale, CA 91203. RSVP today: 818-388-1728." />
+				</div>
+				<script>
+					(function(){
+						var card=document.querySelector('.izba-jazz-float'),modal=document.getElementById('izbaJazzModal');
+						if(!card||!modal)return;
+						var closeBtn=modal.querySelector('.izba-jazz-modal-close');
+						function isDesktop(){return window.matchMedia('(min-width:1025px)').matches;}
+						function open(){modal.classList.add('is-open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';closeBtn.focus();}
+						function close(){modal.classList.remove('is-open');modal.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+						card.addEventListener('click',function(e){if(isDesktop()){e.preventDefault();open();}});
+						closeBtn.addEventListener('click',close);
+						modal.addEventListener('click',function(e){if(e.target===modal)close();});
+						document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('is-open'))close();});
+					})();
+				</script>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-edf1e30 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="edf1e30" data-element_type="section" data-e-type="section">
 						<div class="elementor-container elementor-column-gap-no">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-036e28a" data-id="036e28a" data-element_type="column" data-e-type="column">
