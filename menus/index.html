@@ -73,19 +73,26 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 .elementor-button { background-color: #97112c !important; } 
 @media (max-width: 767px) {
   .izba-bar-wine-banner {
-    width: 100% !important;
-    margin-left: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: 50% !important;
     margin-right: 0 !important;
+    transform: translateX(-50%) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .izba-bar-wine-banner picture,
   .izba-bar-wine-banner img {
     width: 100% !important;
-    max-width: none !important;
+    max-width: 100% !important;
     height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
     display: block !important;
   }
-}</style>
+}
+</style>
 
 <link rel='stylesheet' id='elementor-frontend-css' href='../plugins/elementor/assets/css/frontend.min.css' type='text/css' media='all' />
 <style id='elementor-frontend-inline-css' type='text/css'>
