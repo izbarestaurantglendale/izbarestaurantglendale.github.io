@@ -70,8 +70,22 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 .patiotime-enable-onepage-menu-check .current-menu-item > a:before { display: none !important; } 
 .sidemenu .container { background-color: #1a1a1a; }
 /* Force button color if variables are ignored */
-.elementor-button { background-color: #97112c !important; }
-</style>
+.elementor-button { background-color: #97112c !important; } 
+@media (max-width: 767px) {
+  .izba-bar-wine-banner {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .izba-bar-wine-banner picture,
+  .izba-bar-wine-banner img {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    display: block !important;
+  }
+}</style>
 
 <link rel='stylesheet' id='elementor-frontend-css' href='../plugins/elementor/assets/css/frontend.min.css' type='text/css' media='all' />
 <style id='elementor-frontend-inline-css' type='text/css'>
