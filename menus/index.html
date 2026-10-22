@@ -347,10 +347,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <!-- ================= END COMING SOON ================= -->
 
 <!-- ======= СТАРОЕ МЕНЮ: код сохранён полностью, скрыт от посетителей =======
-     Чтобы вернуть меню: удалите блок "IZBA COMING SOON" выше и в строке ниже
-     удалите атрибуты hidden и style="display:none !important;" (а также
-     закрывающий </div> с пометкой END ARCHIVE в конце). -->
-<div id="izba-menu-archive" hidden aria-hidden="true" style="display:none !important;">
+     Чтобы вернуть меню: удалите блок "IZBA COMING SOON" выше, замените
+     <template id="izba-menu-archive"> на <div> и </template> в конце на </div>. -->
+<template id="izba-menu-archive">
 		<div data-elementor-type="wp-page" data-elementor-id="433" class="elementor elementor-433" data-elementor-post-type="page">
 						<section class="elementor-section elementor-top-section elementor-element elementor-element-1bdf5dd elementor-section-height-min-height pt-section-content-fullwidth pt-parallax-on-scroll pt_scroll_y_100 elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="1bdf5dd" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;zigzag&quot;}" data-pt-parallax-y="100"  data-pt-background-image="../uploads/2026/04/ChatGPT-Image-Apr-22-2026-05_51_13-AM-1.png">
 							<div class="elementor-background-overlay"></div>
@@ -807,7 +806,7 @@ or guacamole.</p>                    </div>
 					</div>
 		</section>
 				</div>
-</div>
+</template>
 <!-- END ARCHIVE: конец скрытого старого меню -->
     </div><!-- .post-entry -->
 </article>                    </div>
@@ -1318,4 +1317,4 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 </html>
 
 
-<!-- Page cached by LiteSpeed Cache 7.8
+<!-- Page cached by LiteSpeed Cache 7.8.1 on 2026-05-04 00:34:23 -->
