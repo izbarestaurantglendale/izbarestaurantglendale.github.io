@@ -1140,7 +1140,37 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 //# sourceURL=/js/wp-emoji-loader.min.js
 /* ]]> */
 </script>
-    </body>
+   <!-- ===== Force chicken-tabaka.PNG as Menus header photo ===== -->
+<style>
+.elementor-element-1bdf5dd {
+	background-image: url("../uploads/2026/10/chicken-tabaka.PNG") !important;
+	background-size: cover !important;
+	background-position: center center !important;
+}
+</style>
+<script>
+(function () {
+	var NEW = 'url("../uploads/2026/10/chicken-tabaka.PNG")';
+	function fix() {
+		var hero = document.querySelector('.elementor-element-1bdf5dd');
+		if (!hero) return;
+		var nodes = [hero].concat(Array.prototype.slice.call(hero.querySelectorAll('*')));
+		nodes.forEach(function (el) {
+			try {
+				var bg = getComputedStyle(el).backgroundImage;
+				if (bg && bg !== 'none' && bg.indexOf('chicken-tabaka') === -1 && bg.indexOf('url(') > -1) {
+					el.style.setProperty('background-image', NEW, 'important');
+				}
+			} catch (e) {}
+		});
+	}
+	document.addEventListener('DOMContentLoaded', fix);
+	window.addEventListener('load', fix);
+	var n = 0, t = setInterval(function () { fix(); if (++n > 12) clearInterval(t); }, 500);
+})();
+</script>
+<!-- ===== END ===== -->
+	</body>
 </html>
 
 
