@@ -1188,7 +1188,37 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 //# sourceURL=/js/wp-emoji-loader.min.js
 /* ]]> */
 </script>
-    </body>
+   <!-- ===== Replace old 3-plates photo with tri-tarelki.png ===== -->
+<style>
+.elementor-element-f616075 > .elementor-widget-wrap,
+.elementor-element-f616075 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+	background-image: url("uploads/2026/10/tri-tarelki.png") !important;
+}
+</style>
+<script>
+(function () {
+	var NEW = 'url("uploads/2026/10/tri-tarelki.png")';
+	function fix() {
+		document.querySelectorAll('*').forEach(function (el) {
+			try {
+				var bg = getComputedStyle(el).backgroundImage;
+				if (bg && bg.indexOf('04_35_08') > -1) {
+					el.style.setProperty('background-image', NEW, 'important');
+				}
+				if (el.tagName === 'IMG' && ((el.getAttribute('src') || '').indexOf('04_35_08') > -1 || (el.getAttribute('srcset') || '').indexOf('04_35_08') > -1)) {
+					el.removeAttribute('srcset');
+					el.setAttribute('src', 'uploads/2026/10/tri-tarelki.png');
+				}
+			} catch (e) {}
+		});
+	}
+	document.addEventListener('DOMContentLoaded', fix);
+	window.addEventListener('load', fix);
+	var n = 0, t = setInterval(function () { fix(); if (++n > 12) clearInterval(t); }, 500);
+})();
+</script>
+<!-- ===== END ===== -->
+		</body>
 </html>
 
 
