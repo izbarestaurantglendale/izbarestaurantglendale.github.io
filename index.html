@@ -388,28 +388,52 @@ document.addEventListener("DOMContentLoaded", function() {
 						<img src="uploads/2026/07/izba-coming-soon-banner.jpg" width="3000" height="1081" loading="eager" alt="Stay tuned &#8212; Welcome to the New izba. Coming Soon Friday, July 17th. New Concept. New Vibe. New Experience. Izba Restaurant &amp; Bar." />
 					</div>
 
+					<!-- ===== NEW: Thanksgiving Cakes (image + menu cards, above Fall Specials) ===== -->
+					<style>
+						.izba-cakes { width: 100%; box-sizing: border-box; margin: 0; padding: 40px 16px; background: #fffdf9; }
+						.izba-cakes-inner { max-width: 920px; margin: 0 auto; }
+						.izba-cakes-img { display: block; width: 100%; max-width: 560px; height: auto; margin: 0 auto 32px; border: 0; }
+						.izba-cakes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+						.izba-cake-card { box-sizing: border-box; padding: 20px 20px 14px; background: #fffdf9; border: 1px solid #dccdbd; border-radius: 10px; }
+						.izba-cake-card h3 { margin: 0 0 8px; font-family: "Cormorant Garamond", Georgia, serif; font-size: 28px; font-weight: 500; line-height: 1.15; color: #2a211c; }
+						.izba-cake-card p { margin: 0 0 14px; font-family: "Jost", Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #6b5a50; }
+						.izba-cake-prices { display: flex; justify-content: space-between; gap: 12px; padding-top: 10px; border-top: 1px solid #dccdbd; font-family: "Jost", Arial, sans-serif; font-size: 16px; font-weight: 600; color: #97112c; }
+						@media (max-width: 700px) {
+							.izba-cakes { padding: 28px 16px; }
+							.izba-cakes-grid { grid-template-columns: 1fr; gap: 16px; }
+							.izba-cake-card h3 { font-size: 26px; }
+						}
+					</style>
+					<div class="izba-cakes">
+						<div class="izba-cakes-inner">
+							<img class="izba-cakes-img" src="uploads/2026/11/Nov16.png" loading="eager" alt="Izba Thanksgiving Cakes: preorder now" />
+							<div class="izba-cakes-grid">
+								<div class="izba-cake-card">
+									<h3>Medovik (Honey Cake)</h3>
+									<p>Delicate honey cake layers with cream, finished with golden crumbs and fresh strawberries.</p>
+									<div class="izba-cake-prices"><span>Serves 8 &middot; $55</span><span>Serves 12 &middot; $70</span></div>
+								</div>
+								<div class="izba-cake-card">
+									<h3>Pancho</h3>
+									<p>Soft sponge cake layered with cream, finished with a dark chocolate drizzle.</p>
+									<div class="izba-cake-prices"><span>Serves 8 &middot; $55</span><span>Serves 12 &middot; $70</span></div>
+								</div>
+								<div class="izba-cake-card">
+									<h3>Tiramisu</h3>
+									<p>Espresso-soaked ladyfingers layered with mascarpone cream and dusted with cocoa.</p>
+									<div class="izba-cake-prices"><span>Serves 8 &middot; $45</span><span>Serves 12 &middot; $65</span></div>
+								</div>
+								<div class="izba-cake-card">
+									<h3>Napoleon</h3>
+									<p>Flaky pastry layered with smooth cream and finished with golden pastry crumbs.</p>
+									<div class="izba-cake-prices"><span>Serves 8 &middot; $55</span><span>Serves 12 &middot; $70</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ===== END Thanksgiving Cakes ===== -->
 
-							
-					<!-- ===== NEW: Guitar Nov 20 + Kurmaev Nov 21 posters (before Fall Specials) ===== -->
-<style>
-	.izba-poster-nov { display: block; width: 100%; margin: 0; padding: 0; line-height: 0; }
-	.izba-poster-nov a { display: block; width: 100%; margin: 0; padding: 0; line-height: 0; }
-	.izba-poster-nov img { display: block; width: 100%; height: auto; margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; }
-</style>
-<div class="izba-poster-nov">
-	<a href="uploads/2026/11/Guitar%20Nov%2020.png" target="_blank" rel="noopener">
-		<img src="uploads/2026/11/Guitar%20Nov%2020.png" loading="eager" alt="Live guitar at Izba Restaurant, November 20" />
-	</a>
-</div>
-<div class="izba-poster-nov">
-	<a href="uploads/2026/11/Kurmaev%20Nov%2021.png" target="_blank" rel="noopener">
-		<img src="uploads/2026/11/Kurmaev%20Nov%2021.png" loading="eager" alt="Kurmaev at Izba Restaurant, November 21" />
-	</a>
-</div>
-<!-- ===== END Nov posters ===== -->
-							
-							
-							<!-- ===== NEW: Fall Specials menu image (right after the banner) ===== -->
+					<!-- ===== NEW: Fall Specials menu image (right after the banner) ===== -->
 					<style>
 						.izba-fall-specials { display: block; width: 100%; margin: 0; padding: 0; line-height: 0; }
 						.izba-fall-specials a { display: block; width: 100%; margin: 0; padding: 0; line-height: 0; }
@@ -427,7 +451,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		<div id="primary" class="primary content-area">
                                             <article class="post-1319 page type-page status-publish hentry">
     <div class="entry-content">		<div data-elementor-type="wp-page" data-elementor-id="1319" class="elementor elementor-1319" data-elementor-post-type="page">
-						<section class="elementor-section elementor-top-section elementor-element elementor-element-0c646ab elementor-section-height-min-height pt-section-content-fullwidth elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="0c646ab" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;shape_divider_bottom&quot;:&quot;zigzag&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:1488,&quot;url&quot;:&quot;uploads\/2026\/04\/ChatGPT-Image-Apr-22-2026-03_26_50-AM-1.png&quot;},{&quot;id&quot;:1487,&quot;url&quot;:&quot;uploads\/2026\/10\/blini.JPG&quot;},{&quot;id&quot;:1489,&quot;url&quot;:&quot;uploads\/2026\/10\/syrniki.jpeg&quot;}],&quot;background_slideshow_ken_burns&quot;:&quot;yes&quot;,&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500,&quot;background_slideshow_ken_burns_zoom_direction&quot;:&quot;in&quot;}">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-0c646ab elementor-section-height-min-height pt-section-content-fullwidth elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="0c646ab" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;shape_divider_bottom&quot;:&quot;zigzag&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:1488,&quot;url&quot;:&quot;uploads\/2026\/04\/ChatGPT-Image-Apr-22-2026-03_26_50-AM-1.png&quot;},{&quot;id&quot;:1487,&quot;url&quot;:&quot;uploads\/2026\/04\/ChatGPT-Image-Apr-22-2026-03_22_40-AM-1.png&quot;},{&quot;id&quot;:1489,&quot;url&quot;:&quot;uploads\/2026\/04\/ChatGPT-Image-Apr-22-2026-03_27_53-AM-1.png&quot;}],&quot;background_slideshow_ken_burns&quot;:&quot;yes&quot;,&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500,&quot;background_slideshow_ken_burns_zoom_direction&quot;:&quot;in&quot;}">
 							<div class="elementor-background-overlay"></div>
 						<div class="elementor-shape elementor-shape-bottom" aria-hidden="true" data-negative="false">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 5.8" preserveAspectRatio="none">
@@ -493,8 +517,7 @@ document.addEventListener("DOMContentLoaded", function() {
 						<div class="elementor-element elementor-element-8bcce4c elementor-widget elementor-widget-pt_rounded_image" data-id="8bcce4c" data-element_type="widget" data-e-type="widget" data-widget_type="pt_rounded_image.default">
 				<div class="elementor-widget-container">
 									<div class="pt-rounded-image" style="border-radius: var(--rounded) var(--rounded) 0 0;">
-					<a href="menus/">					<!-- REPLACED: Desserts photo -> medovik.jpeg (same 550x826 proportions, cropped to fit) -->
-					<img decoding="async" width="550" height="826" src="uploads/2026/10/medovik.jpeg" class="attachment-patiotime_550x9999 size-patiotime_550x9999 wp-image-1502" alt="Izba - Dessert" style="aspect-ratio: 550 / 826; object-fit: cover;" />					</a>				</div>				</div>
+					<a href="menus/">					<img decoding="async" width="550" height="826" src="uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_08_31-AM-1-550x826.png" class="attachment-patiotime_550x9999 size-patiotime_550x9999 wp-image-1502" alt="Izba - Dessert" srcset="uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_08_31-AM-1-550x826.png 550w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_08_31-AM-1-200x300.png 200w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_08_31-AM-1-682x1024.png 682w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_08_31-AM-1-768x1154.png 768w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_08_31-AM-1-780x1172.png 780w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_08_31-AM-1-600x901.png 600w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_08_31-AM-1-370x556.png 370w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_08_31-AM-1-255x383.png 255w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_08_31-AM-1.png 1023w" sizes="(max-width: 550px) 100vw, 550px" />					</a>				</div>				</div>
 				</div>
 				<div class="elementor-element elementor-element-ea1971d elementor-widget elementor-widget-heading" data-id="ea1971d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><a href="menus/">Desserts</a></h2>				</div>
@@ -568,8 +591,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-widget-image elementor-element elementor-element-24fe7d1 elementor-widget elementor-widget-pt_image" data-id="24fe7d1" data-element_type="widget" data-e-type="widget" data-widget_type="pt_image.default">
 				<div class="elementor-widget-container">
-					                                        <!-- REPLACED: Syrniki photo -> syrniki.jpeg (same 550x826 proportions, cropped to fit) -->
-                                        <img loading="lazy" decoding="async" width="550" height="826" src="uploads/2026/10/syrniki.jpeg" class="attachment-patiotime_550x9999 size-patiotime_550x9999 wp-image-1509" alt="Syrniki with jam" style="aspect-ratio: 550 / 826; object-fit: cover;" />                                            				</div>
+					                                        <img loading="lazy" decoding="async" width="550" height="826" src="uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_26_09-AM-1-550x826.png" class="attachment-patiotime_550x9999 size-patiotime_550x9999 wp-image-1509" alt="Syrniki with jam" srcset="uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_26_09-AM-1-550x826.png 550w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_26_09-AM-1-200x300.png 200w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_26_09-AM-1-682x1024.png 682w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_26_09-AM-1-768x1154.png 768w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_26_09-AM-1-780x1172.png 780w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_26_09-AM-1-600x901.png 600w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_26_09-AM-1-370x556.png 370w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_26_09-AM-1-255x383.png 255w" sizes="(max-width: 550px) 100vw, 550px" />                                            				</div>
 				</div>
 					</div>
 		</div>
@@ -639,8 +661,7 @@ ENJOY EVERY MOMENT WITH US.	            </h3>                <div class="pt-titl
 					
 		<div class="pt-cta cta-layout-text-overlap content-middle text-hover-to-show with-inner-border text-center cta-hover-img-zoom dark-color">
             <div class="pt-cta-wrap">	                <div class="pt-cta-img">
-	                    <!-- REPLACED: Grilled Salmon photo -> black-burger.JPG (same 1023x1537 proportions, cropped to fit) -->
-	                    <img loading="lazy" decoding="async" width="1023" height="1537" src="uploads/2026/10/black-burger.JPG" class="attachment-full size-full wp-image-1513" alt="Grilled Salmon Steak" style="aspect-ratio: 1023 / 1537; object-fit: cover;" />	                </div>                <div class="pt-cta-overlay"></div>
+	                    <img loading="lazy" decoding="async" width="1023" height="1537" src="uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_54_27-AM-1.png" class="attachment-full size-full wp-image-1513" alt="Grilled Salmon Steak" srcset="uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_54_27-AM-1.png 1023w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_54_27-AM-1-200x300.png 200w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_54_27-AM-1-682x1024.png 682w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_54_27-AM-1-768x1154.png 768w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_54_27-AM-1-780x1172.png 780w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_54_27-AM-1-600x901.png 600w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_54_27-AM-1-550x826.png 550w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_54_27-AM-1-370x556.png 370w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-04_54_27-AM-1-255x383.png 255w" sizes="(max-width: 1023px) 100vw, 1023px" />	                </div>                <div class="pt-cta-overlay"></div>
 
                 <div class="pt-cta-content">		            <h4 class="pt-cta-title pt-title">
 		                Grilled Salmon Steak		            </h4>		            <div class="pt-cta-text">
@@ -672,7 +693,7 @@ ENJOY EVERY MOMENT WITH US.	            </h3>                <div class="pt-titl
 					
 		<div class="pt-cta cta-layout-text-overlap content-middle text-hover-to-show with-inner-border text-center cta-hover-img-zoom dark-color">
             <div class="pt-cta-wrap">	                <div class="pt-cta-img">
-	                    <img loading="lazy" decoding="async" width="1023" height="1537" src="uploads/2026/10/salat-i-eggs.JPG" class="attachment-full size-full wp-image-1516" alt="Vitello Tonnato - Izba Restaurant" style="aspect-ratio: 1023 / 1537; object-fit: cover;" />	                </div>                <div class="pt-cta-overlay"></div>
+	                    <img loading="lazy" decoding="async" width="1023" height="1537" src="uploads/2026/04/ChatGPT-Image-Apr-22-2026-05_03_07-AM-1.png" class="attachment-full size-full wp-image-1516" alt="Vitello Tonnato - Izba Restaurant" srcset="uploads/2026/04/ChatGPT-Image-Apr-22-2026-05_03_07-AM-1.png 1023w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-05_03_07-AM-1-200x300.png 200w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-05_03_07-AM-1-682x1024.png 682w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-05_03_07-AM-1-768x1154.png 768w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-05_03_07-AM-1-780x1172.png 780w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-05_03_07-AM-1-600x901.png 600w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-05_03_07-AM-1-550x826.png 550w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-05_03_07-AM-1-370x556.png 370w, uploads/2026/04/ChatGPT-Image-Apr-22-2026-05_03_07-AM-1-255x383.png 255w" sizes="(max-width: 1023px) 100vw, 1023px" />	                </div>                <div class="pt-cta-overlay"></div>
 
                 <div class="pt-cta-content">		            <h4 class="pt-cta-title pt-title">
 		                Vitello Tonnato		            </h4>		            <div class="pt-cta-text">
@@ -779,7 +800,7 @@ ENJOY EVERY MOMENT WITH US.	            </h3>                <div class="pt-titl
         <div class="pt-title-wrap">	            <h5 class="pt-title">
 	                Taking Orders	            </h5>	            <div class="pt-title-text">
 	                <p>Order by phone<br>Tel: <a href="http://tel: +1(818) 388-1728">(<span style="color: #1a0dab; -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1); outline: 0px; font-family: Arial, sans-serif; background-color: #ffffff;" aria-label="Call phone number +1 818-388-1728">818) 388-1728</span></a></p>
-<p>Monday: Closed<br>Tuesday &#8211; Thursday: 09:00 AM &#8211; 05:00 PM<br>Friday &#8211; Saturday: 09:00 AM &#8211; 10:00 PM<br>Sunday: 09:00 AM &#8211; 05:00 PM</p>	            </div>                <div class="pt-title-btn">
+<p>Monday: Closed<br>Tuesday &#8211; Thursday: 09:00 AM &#8211; 09:00 PM<br>Friday &#8211; Saturday: 09:00 AM &#8211; 10:00 PM<br>Sunday: 09:00 AM &#8211; 05:00 PM</p>	            </div>                <div class="pt-title-btn">
                     <a class="button elementor-button-link pt-btn-outline" role="button" href="tel:+1(818)%20388-1728">
                         <span class="pt-btn-text">Order Now</span>
                     </a>
@@ -1189,37 +1210,7 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 //# sourceURL=/js/wp-emoji-loader.min.js
 /* ]]> */
 </script>
-   <!-- ===== Replace old 3-plates photo with tri-tarelki.png ===== -->
-<style>
-.elementor-element-f616075 > .elementor-widget-wrap,
-.elementor-element-f616075 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-	background-image: url("uploads/2026/10/tri-tarelki.png") !important;
-}
-</style>
-<script>
-(function () {
-	var NEW = 'url("uploads/2026/10/tri-tarelki.png")';
-	function fix() {
-		document.querySelectorAll('*').forEach(function (el) {
-			try {
-				var bg = getComputedStyle(el).backgroundImage;
-				if (bg && bg.indexOf('04_35_08') > -1) {
-					el.style.setProperty('background-image', NEW, 'important');
-				}
-				if (el.tagName === 'IMG' && ((el.getAttribute('src') || '').indexOf('04_35_08') > -1 || (el.getAttribute('srcset') || '').indexOf('04_35_08') > -1)) {
-					el.removeAttribute('srcset');
-					el.setAttribute('src', 'uploads/2026/10/tri-tarelki.png');
-				}
-			} catch (e) {}
-		});
-	}
-	document.addEventListener('DOMContentLoaded', fix);
-	window.addEventListener('load', fix);
-	var n = 0, t = setInterval(function () { fix(); if (++n > 12) clearInterval(t); }, 500);
-})();
-</script>
-<!-- ===== END ===== -->
-		</body>
+    </body>
 </html>
 
 
